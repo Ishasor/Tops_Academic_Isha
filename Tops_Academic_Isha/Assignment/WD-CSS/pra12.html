@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.bg-img {
+  background-image: url("https://images.pexels.com/photos/572487/pexels-photo-572487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  position: absolute;
+  right: 0;
+  margin: 30px;
+  max-width: 300%;
+  padding: 16px;
+  background-color: white;
+}
+.container input[type="text"]  {
+          border: 2px solid rgb(234, 227, 227);
+          height: 30px;
+          width: 80%;
+          border-radius: 20px;
+          text-indent: 10px;
+}
+.container button[type="submit"]{
+                  background-color: rgb(6, 91, 41);  
+                  border: 2px solid rgb(234, 227, 227);
+                  height: 30px;
+                  width: 80%;
+                  color: aliceblue;
+                  border-radius: 20px       
+}  
+    </style>
+</head>
+<body>
+    <div class="bg-img">
+        <form action="" class="container">
+            <p>Landfarm</p>
+            <h1>Request call back caurses <br>
+                 <input type="text" value="your name"><br>
+                 <input type="text" value="Email"><br>
+                 <input type="text" value="phone"><br>
+                 <input type="text" value="subject"><br>
+                 <button type="submit" class="btn">Login</button>
+            </h1>
+
+        </form>
+      </div>
+</body>
+</html>

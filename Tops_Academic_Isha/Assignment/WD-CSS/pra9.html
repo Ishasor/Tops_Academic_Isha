@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .main {
+            max-width: 70vw;
+            margin: 50px auto;
+            height: 100%;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            padding: 20px 20px;
+            border: 3px solid black;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s ease-in-out;
+        }
+        
+        .main .box:nth-child(3) {
+            grid-row-start: 1;
+            grid-column-start: 3;
+            grid-row-end: span 2;
+        }
+        
+        .main .box:nth-child(4) {
+            grid-row: 2/span 2;
+            grid-column: 1;
+            height: 90%;
+        }
+        
+        .box {
+            overflow: hidden;
+        }
+        .main .box:hover {
+  border: 3px double #1a0101;
+}
+    </style>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="box"><img src="https://cdn.pixabay.com/photo/2024/11/22/18/18/mute-swan-9217198_640.jpg" alt="img"></div>
+        <div class="box"><img src="https://cdn.pixabay.com/photo/2024/01/14/21/44/snowman-8508881_640.jpg" alt="img"></div>
+        <div class="box"><img src="https://cdn.pixabay.com/photo/2022/04/28/19/49/woman-7161865_640.jpg" alt="img"></div>
+        <div class="box"><img src="https://i.pinimg.com/originals/ef/7d/29/ef7d29352c87f6c62479383ff7c6a8f1.jpg" alt="img"></div>
+        <div class="box"><img src="https://cdn.pixabay.com/photo/2022/06/29/10/58/fox-7291456_640.jpg" alt="img"></div>
+        <div class="box"><img src="https://cdn.pixabay.com/photo/2022/03/27/12/46/chongqing-7094955_640.jpg" alt="img"></div>
+
+    </div>
+</body>
+
+</html>

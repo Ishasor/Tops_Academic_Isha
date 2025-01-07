@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container {
+      position: relative;
+      width: 50%;
+      margin: auto;
+    }
+
+.image {
+  
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(93, 61, 75, 0.4);
+-webkit-backdrop-filter: blur(5px);
+ backdrop-filter: blur(5px);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  
+}
+.text {
+  color: rgb(237, 233, 233);
+ 
+}
+.overlay h1{
+  transform: scale(0);
+  transition: 1s ease-in-out 1s;
+}
+.container :hover .overlay h1 {
+  transform: scale(1);
+}
+.container :hover .overlay{
+   transform: scale(1);
+}
+.overlay{
+  text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/970369/pexels-photo-970369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Hello world</div>
+        </div>
+      </div>
+</body>
+</html>

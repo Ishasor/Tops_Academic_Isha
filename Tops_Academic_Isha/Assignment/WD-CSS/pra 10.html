@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            height: 480px;
+            width: 1000x;
+            margin: 1;
+            padding: 0;
+            border: 2px solid black;
+            text-align: right center;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            background-color: #fff;
+        }
+        
+        .gallery-item {
+            margin: 10px;
+            width: calc(25% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .gallery-item:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .rotate:hover {
+            transform: rotate(10deg);
+        }
+        
+        .scale:hover {
+            transform: scale(1.1);
+        }
+        
+        .translate:hover {
+            transform: translateY(-10px);
+        }
+        
+        .skew:hover {
+            transform: skewX(10deg);
+        }
+        
+        .skew:hover {
+            transform: rotateX(180deg);
+        }
+        
+        .rotate:hover {
+            transform: rotate(20deg);
+        }
+        
+        .translate:hover {
+            transform: translatex(-20px);
+        }
+        
+        .scale:hover {
+            transform: scale(1.5);
+        }
+        
+        .rotate:hover {
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="gallery-item rotate"> <img src="https://tse4.mm.bing.net/th?id=OIP.gltVOTwRqL7S_7_gkuXFuAHaEo&pid=Api&P=0&h=180" alt=""> </div>
+        <div class="gallery-item scale"> <img src="http://images6.fanpop.com/image/photos/36300000/Disney-Princess-image-disney-princess-36390924-900-630.png" alt=""> </div>
+        <div class="gallery-item translate"> <img src="http://images4.fanpop.com/image/photos/16300000/Tangled-Rapunzel-disney-princess-16363312-1600-1200.jpg" alt=""> </div>
+        <div class="gallery-item skew"> <img src="https://tse2.mm.bing.net/th?id=OIP.1JEkO3_b1mMgSvHk9KXmJAHaEK&pid=Api&P=0&h=180" alt=""> </div>
+        <div class="gallery-item  rotate"> <img src="https://www.japan-academy.in/blog/wp-content/uploads/2022/06/Shin-chan-Character.jpg" alt=""> </div>
+        <div class="gallery-item translate"> <img src="https://tse4.mm.bing.net/th?id=OIP.Ff7XwTFgVoDsx_dy9LxMHAHaFF&pid=Api&P=0&h=180" alt=""> </div>
+        <div class="gallery-item  scale"> <img src="https://tse2.mm.bing.net/th?id=OIP.mSw8myI-uks6zxj8qzB_XwHaE6&pid=Api&P=0&h=180" alt=""> </div>
+        <div class="gallery-item rotate"> <img src="https://tse4.mm.bing.net/th?id=OIP.UBAsjsmOwKJaJiP0YvylYwHaEK&pid=Api&P=0&h=180" alt=""> </div>
+
+    </div>
+</body>
+
+</html>

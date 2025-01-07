@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+            display: grid;
+            place-content: center;
+        }
+        
+        .container {
+            width: 45vw;
+            height: 90vh;
+            position: relative;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.2);
+            transition: 1s ease-in-out;
+        }
+        
+        .container:hover img {
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <img src="https://media.istockphoto.com/id/938975958/photo/jal-mahal-water-palace-jaipur-rajasthan-with-landscape-at-sunset.jpg?s=2048x2048&w=is&k=20&c=QDrHNI1OZjH5IeEp5DGd6sS75euaa34ZbPL3mpvyJG8=" alt="" />
+        </div>
+    </div>
+</body>
+
+</html>
